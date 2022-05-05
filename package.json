@@ -19,5 +19,8 @@
     "nikeedev"
   ],
   "author": "nikeedev",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@nikee_dev/gameengine_js": "^0.2.13"
+  }
 }
