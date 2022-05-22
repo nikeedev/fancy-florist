@@ -2,10 +2,10 @@
   "name": "fancy-florist",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "private": true,
+  "type": "module",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,6 @@
   "author": "nikeedev",
   "license": "ISC",
   "dependencies": {
-    "@nikee_dev/gameengine_js": "^0.2.13"
+    "@nikee_dev/gameengine_js": "^0.2.14"
   }
 }
