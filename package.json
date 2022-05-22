@@ -4,8 +4,9 @@
   "description": "",
   "type": "module",
   "main": "main.js",
+  "private": true,
   "scripts": {
-    "start": "node ."
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,6 @@
   "author": "nikeedev",
   "license": "ISC",
   "dependencies": {
-    "@nikee_dev/gameengine_js": "^0.2.14"
+    "@nikee_dev/gameengine_js": "^0.4.0"
   }
 }
