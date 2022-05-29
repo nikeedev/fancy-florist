@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "fancy-florist"
+    "liveServer.settings.multiRootWorkspaceName": "fancy-florist",
+    "typescript.tsdk": "node_modules\\typescript\\lib"
 }

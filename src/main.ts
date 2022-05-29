@@ -1,4 +1,4 @@
-import { GameEngine, Size } from '../node_modules/@nikee_dev/gameengine_js/GameEngine.js'
+import { GameEngine } from '../node_modules/@nikee_dev/gameengine_js/GameEngine'
 
 const canvas: HTMLCanvasElement = <HTMLCanvasElement> document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
@@ -19,7 +19,7 @@ let config = {
 
 var game = new GameEngine.Game(config);
 
-var player = new GameEngine.Graphics.Rect(new GameEngine.Vector2(60, 60), new Size(20, 20), ScreenSize);
+var player = new GameEngine.Graphics.Rect(new GameEngine.Vector2(60, 60), new GameEngine.Size(20, 20), ScreenSize);
 
 game.create(() => {
     player.draw(game.context);

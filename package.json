@@ -24,5 +24,8 @@
   "license": "ISC",
   "dependencies": {
     "@nikee_dev/gameengine_js": "^0.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.2"
   }
 }
