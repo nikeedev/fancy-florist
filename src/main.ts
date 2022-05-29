@@ -1,4 +1,4 @@
-import { GameEngine } from '../node_modules/@nikee_dev/gameengine_js/GameEngine'
+import { GameEngine } from '../node_modules/@nikee_dev/gameengine_js/GameEngine.js'
 
 const canvas: HTMLCanvasElement = <HTMLCanvasElement> document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
