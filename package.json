@@ -1,8 +1,7 @@
 {
   "name": "fancy-florist",
   "version": "1.0.0",
-  "description": "",
-  "type": "module",
+  "description": "A GameEngine.js game, and made for improving the engine itself!",
   "main": "main.js",
   "private": true,
   "scripts": {

@@ -19,10 +19,15 @@ let config = {
 
 var game = new GameEngine.Game(config);
 
-var player = new GameEngine.Graphics.Rect(new GameEngine.Vector2(60, 60), new GameEngine.Size(20, 20), ScreenSize);
+// var player = new GameEngine.Graphics.Rect(new GameEngine.Vector2(60, 60), new GameEngine.Size(20, 20), ScreenSize);
+
+var player = new GameEngine.Graphics.Sprite("../assets/player-canvas.png", new GameEngine.Vector2(config.width/2-70/2, config.height/2-70/2), ScreenSize);
+
+await player.init();
+
 
 game.create(() => {
-    player.draw(game.context);
+    player.draw(game.context, true);
 })
 
 game.update(() => {
@@ -47,14 +52,14 @@ game.update(() => {
         player.position.x = 1;
     }
 
-    if (player.position.y >= ScreenSize.height - player.size.width) {
-        player.position.y = 1 - player.size.height + ScreenSize.height;
+    if (player.position.y >= ScreenSize.height - 70) {
+        player.position.y = 1 - 70 + ScreenSize.height;
     }
 
     
-    if (player.position.x >= ScreenSize.width - player.size.width) {
-        player.position.x = 1 - player.size.width + ScreenSize.width;
+    if (player.position.x >= ScreenSize.width - 70) {
+        player.position.x = 1 - 70 + ScreenSize.width;
     }
 
-    player.draw(game.context);
+    player.draw(game.context, true);
 })
