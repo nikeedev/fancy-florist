@@ -16,7 +16,7 @@ let config = {
 };
 var game = new GameEngine.Game(config);
 // var player = new GameEngine.Graphics.Rect(new GameEngine.Vector2(60, 60), new GameEngine.Size(20, 20), ScreenSize);
-var player = new GameEngine.Graphics.Sprite("/../assets/player_canvas.png", new GameEngine.Vector2(config.width / 2 - 70 / 2, config.height / 2 - 70 / 2), ScreenSize);
+var player = new GameEngine.Graphics.Sprite("./assets/player_canvas.png", new GameEngine.Vector2(config.width / 2 - 70 / 2, config.height / 2 - 70 / 2), ScreenSize);
 await player.init();
 game.create(() => {
     player.draw(game.context, true);
