@@ -1,10 +1,10 @@
-import { GameEngine } from '../node_modules/@nikee_dev/gameengine_js/GameEngine.js'
+import { PlayLib } from '../node_modules/playlib/bin/PlayLib.js'
 
 const canvas: HTMLCanvasElement = <HTMLCanvasElement> document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth - 40
 canvas.height = window.innerHeight - 30
-const ScreenSize = new GameEngine.Size(canvas.width, canvas.height);
+const ScreenSize = new PlayLib.Size(canvas.width, canvas.height);
 
 let config = {
     game_name: "Fancy Florist",
@@ -17,11 +17,11 @@ let config = {
     context: ctx
 }
 
-var game = new GameEngine.Game(config);
+var game = new PlayLib.Game(config);
 
-// var player = new GameEngine.Graphics.Rect(new GameEngine.Vector2(60, 60), new GameEngine.Size(20, 20), ScreenSize);
+// var player = new PlayLibRect(new PlayLib.Vector2(60, 60), new PlayLib.Size(20, 20), ScreenSize);
 
-var player = new GameEngine.Graphics.Sprite("./assets/player_canvas.png", new GameEngine.Vector2(config.width/2-70/2, config.height/2-70/2), ScreenSize);
+var player = new PlayLib.Sprite("./assets/player_canvas.png", new PlayLib.Vector2(config.width/2-70/2, config.height/2-70/2), ScreenSize);
 
 await player.init();
 
@@ -32,16 +32,16 @@ game.create(() => {
 
 game.update(() => {
     
-    if (GameEngine.Input.GetKeyDown(GameEngine.Keys.ArrowUp)) {
+    if (PlayLib.Event.KeyPressed(PlayLib.Keys.ArrowUp)) {
         player.position.y -= 2.5;
     }
-    if (GameEngine.Input.GetKeyDown(GameEngine.Keys.ArrowDown)) {
+    if (PlayLib.Event.KeyPressed(PlayLib.Keys.ArrowDown)) {
         player.position.y += 2.5;
     }
-    if (GameEngine.Input.GetKeyDown(GameEngine.Keys.ArrowLeft)) {
+    if (PlayLib.Event.KeyPressed(PlayLib.Keys.ArrowLeft)) {
         player.position.x -= 2.5;
     }
-    if (GameEngine.Input.GetKeyDown(GameEngine.Keys.ArrowRight)) {
+    if (PlayLib.Event.KeyPressed(PlayLib.Keys.ArrowRight)) {
         player.position.x += 2.5;
     }
 
