@@ -1,6 +1,6 @@
 # Fancy Florist
 
-A GameEngine.js game, and made for improving the engine itself!
+A Playlib game, and made for improving the library itself!
 
 Try at https://nikeedev.github.io/fancy-florist
 
