@@ -4,6 +4,7 @@
   "description": "A GameEngine.js game, and made for improving the engine itself!",
   "main": "main.js",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "tsc"
   },
@@ -25,6 +26,6 @@
     "typescript": "^4.7.2"
   },
   "dependencies": {
-    "playlib": "^0.5.2"
+    "playlib": "^0.5.3"
   }
 }
