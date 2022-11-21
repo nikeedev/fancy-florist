@@ -26,6 +26,6 @@
     "typescript": "^4.7.2"
   },
   "dependencies": {
-    "playlib": "^0.5.3"
+    "playlib": "^0.6.3"
   }
 }
