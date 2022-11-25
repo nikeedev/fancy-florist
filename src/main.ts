@@ -1,4 +1,4 @@
-import { Playlib } from "../node_modules/playlib/bin/playlib.js";
+import { Playlib } from "../../../playlib/bin/playlib.js";
 
 const canvas: HTMLCanvasElement = <HTMLCanvasElement> document.getElementById("canvas");
 canvas.width = window.innerWidth - 40
@@ -70,4 +70,4 @@ class GameScene extends Playlib.Scene
 var game = new Playlib.Game(config, [new GameScene()]);
 
 
-game.start();
+game.run();
