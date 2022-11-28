@@ -24,7 +24,6 @@ await player.init();
 class GameScene extends Playlib.Scene
 {
 
-
     create(ctx: any)
     {
         player.draw(ctx);
