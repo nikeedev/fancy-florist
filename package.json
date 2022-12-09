@@ -2,7 +2,7 @@
   "name": "fancy-florist",
   "version": "1.0.0",
   "description": "A GameEngine.js game, and made for improving the engine itself!",
-  "main": "main.js",
+  "main": "bin/main.js",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,15 +17,15 @@
     "flowers",
     "florist",
     "gamedev",
-    "GameEngine.js",
+    "playlib",
     "nikeedev"
   ],
   "author": "nikeedev",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^4.7.2"
+    "typescript": "^4.8.0"
   },
   "dependencies": {
-    "playlib": "^0.5.3"
+    "playlib": "^0.6.10"
   }
 }
