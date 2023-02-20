@@ -1,2 +1,6 @@
+
+node_modules/typescript
+node_modules/.bin
+package-lock.json
 bin/
 node_modules/
