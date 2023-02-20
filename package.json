@@ -1,17 +1,16 @@
 {
   "name": "fancy-florist",
   "version": "1.0.0",
-  "description": "A GameEngine.js game, and made for improving the engine itself!",
+  "description": "A playlib.js game, and made for improving the engine itself!",
   "main": "bin/main.js",
   "private": true,
   "type": "module",
   "scripts": {
-    "build_playlib": "cd node_modules/playlib && npm start && cd ../..",
-    "build": "tsc"
+    "start": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "fancy-florist"
+    "url": "https://github.com/nikeedev/fancy-florist"
   },
   "keywords": [
     "game",
@@ -22,11 +21,8 @@
     "nikeedev"
   ],
   "author": "nikeedev",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.8.0"
-  },
-  "dependencies": {
-    "playlib": "^0.6.10"
+    "typescript": "^4.9.5"
   }
 }
