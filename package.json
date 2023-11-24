@@ -22,6 +22,9 @@
   ],
   "author": "nikeedev",
   "license": "MIT",
+  "dependencies": {
+    "playlib": "^0.6.11"
+  },
   "devDependencies": {
     "typescript": "^4.9.5"
   }
